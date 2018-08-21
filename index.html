@@ -16,26 +16,56 @@
             <li><a href="#">French Press Recipe</a></li>
             <li><a href="#">Chemex</a></li>
         </ul>
-    </div>
-
-    <div id="v60">
-        <h3>V60 Recipe</h3>
-        <p>Scott Rao Recommends 360 ml of water per 22g of coffee</p>
-        <p>16:1 Ratio of Water to Coffee</p>
-    </div>
-
-    <div id="#frenchpress">
-        <h3>French Press</h3>
-        <p>Scott Rao Recommends 540 ml of water per 30g of coffee</p>
-        <p>18:1 Ratio of Water to Coffee</p>
-    </div>
-
-    <div id="chemex">
-        <h3>Chemex Recipe</h3>
-        <p>Scott Rao Recommends 510 ml of water per 30g of coffee</p>
-        <p>17:1 Ratio of Water to Coffee</p>
-    </div>
     
+        <div id="v60">
+            <h3>V60 Recipe</h3>
+            <p>Scott Rao Recommends 360 ml of water per 22g of coffee</p>
+            <p>16:1 Ratio of Water to Coffee</p>
+
+            <fieldset class="recipe">
+                <legend>V60 settings</legend>
+
+                <label for="volume">Coffee Grams</label>
+                <input type="range" class="gram-range" name="volume"
+                       min="15" max="30" />
+                <h3>Coffee: <span id="coffee-grams-v60" class="coffee-gram"></span></h3>
+                <h3>Water: <span class="water-ml"></span></h3>
+            </fieldset>
+        </div>
+
+        <div id="#frenchpress">
+            <h3>French Press</h3>
+            <p>Scott Rao Recommends 540 ml of water per 30g of coffee</p>
+            <p>18:1 Ratio of Water to Coffee</p>
+
+            <fieldset class="recipe">
+                <legend>French Press</legend>
+
+                <label for="volume">Coffee Grams</label>
+                <input type="range" class="gram-range" name="volume"
+                       min="20" max="40" />
+                       <h3>Coffee: <span class="coffee-gram"></span></h3>
+                       <h3>Water: <span class="water-ml"></span></h3>
+            </fieldset>
+        </div>
+
+        <div id="chemex">
+            <h3>Chemex Recipe</h3>
+            <p>Scott Rao Recommends 510 ml of water per 30g of coffee</p>
+            <p>17:1 Ratio of Water to Coffee</p>
+
+            <fieldset class="recipe">
+                <legend>Chemex</legend>
+
+                <label for="volume">Coffee Grams</label>
+                <input type="range" class="gram-range" name="volume"
+                       min="20" max="40" />
+                       <h3>Coffee: <span class="coffee-gram"></span></h3>
+                       <h3>Water: <span class="water-ml"></span></h3>
+            </fieldset>
+        </div>
+    
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
