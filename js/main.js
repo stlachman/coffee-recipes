@@ -15,7 +15,6 @@ function sliderChange(e){
    var sliders = document.getElementsByClassName('coffee-gram');
    var waterValue  = document.getElementsByClassName('water-ml');
    for (i = 0; i < index.length; i++){
-       console.log(e.id);
       if(e == index[i] && e.id == 'v60-ratio'){
          sliders[i].innerHTML = e.value + ' grams';
          waterValue[i].innerHTML = Math.ceil(e.value * v60Ratio) + ' ml';
