@@ -9,60 +9,62 @@
     
 </head>
 <body>
-    <div class="container">
-        <h2>Coffee Recipes</h2>
+    <main>
+        <div class="container">
+            <h1>Coffee Recipes</h1>
 
-    </div>
+        </div>
+            
+        <div class="grid-container">
+            <div class="tile" id="v60">
+                <h3>V60 Recipe</h3>
+                
+                <p>15:1 Ratio of Water to Coffee</p>
+
+                <fieldset class="recipe">
+                    <legend>V60 settings</legend>
+
+                    <label for="volume">Coffee Grams</label>
+                    <input type="range" class="gram-range" id="v60-ratio" name="volume"
+                        min="15" max="30"/>
+                    <h3>Coffee: <span id="coffee-grams-v60" class="coffee-gram"> 22 grams</span></h3>
+                    <h3>Water: <span class="water-ml"> 330 ml</span></h3>
+                </fieldset>
+            </div>
+
+            <div class="tile" id="frenchpress">
+                <h3>French Press Recipe</h3>
+                
+                <p>18:1 Ratio of Water to Coffee</p>
+
+                <fieldset class="recipe">
+                    <legend>French Press</legend>
+
+                    <label for="volume">Coffee Grams</label>
+                    <input type="range" class="gram-range" name="volume"
+                        min="20" max="40" id="frenchpress-ratio"/>
+                        <h3>Coffee: <span class="coffee-gram">30 grams</span></h3>
+                        <h3>Water: <span class="water-ml"> 540 ml</span></h3>
+                </fieldset>
+            </div>
+
+            <div class="tile" id="chemex">
+                <h3>Chemex Recipe</h3>
+                <p>17:1 Ratio of Water to Coffee</p>
+
+                <fieldset class="recipe">
+                    <legend>Chemex</legend>
+
+                    <label for="volume">Coffee Grams</label>
+                    <input type="range" class="gram-range" name="volume"
+                        min="20" max="40" id="chemex-ratio"/>
+                        <h3>Coffee: <span class="coffee-gram">30 grams</span></h3>
+                        <h3>Water: <span class="water-ml">510 ml</span></h3>
+                </fieldset>
+            </div>
         
-    <div class="grid-container">
-        <div id="v60">
-            <h3>V60 Recipe</h3>
-            
-            <p>15:1 Ratio of Water to Coffee</p>
-
-            <fieldset class="recipe">
-                <legend>V60 settings</legend>
-
-                <label for="volume">Coffee Grams</label>
-                <input type="range" class="gram-range" id="v60-ratio" name="volume"
-                       min="15" max="30"/>
-                <h3>Coffee: <span id="coffee-grams-v60" class="coffee-gram"> 22 grams</span></h3>
-                <h3>Water: <span class="water-ml"> 330 ml</span></h3>
-            </fieldset>
         </div>
-
-        <div id="#frenchpress">
-            <h3>French Press Recipe</h3>
-            
-            <p>18:1 Ratio of Water to Coffee</p>
-
-            <fieldset class="recipe">
-                <legend>French Press</legend>
-
-                <label for="volume">Coffee Grams</label>
-                <input type="range" class="gram-range" name="volume"
-                       min="20" max="40" id="frenchpress-ratio"/>
-                       <h3>Coffee: <span class="coffee-gram">30 grams</span></h3>
-                       <h3>Water: <span class="water-ml"> 540 ml</span></h3>
-            </fieldset>
-        </div>
-
-        <div id="chemex">
-            <h3>Chemex Recipe</h3>
-            <p>17:1 Ratio of Water to Coffee</p>
-
-            <fieldset class="recipe">
-                <legend>Chemex</legend>
-
-                <label for="volume">Coffee Grams</label>
-                <input type="range" class="gram-range" name="volume"
-                       min="20" max="40" id="chemex-ratio"/>
-                       <h3>Coffee: <span class="coffee-gram">30 grams</span></h3>
-                       <h3>Water: <span class="water-ml">510 ml</span></h3>
-            </fieldset>
-        </div>
-    
-    </div>
+    </main>
     <script src="js/main.js"></script>
 </body>
 </html>
