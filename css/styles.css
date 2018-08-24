@@ -28,8 +28,8 @@ h3 {
 #v60 {
     background: 
     linear-gradient(
-      rgba(76,183,76, 0.8), 
-      rgba(76,183,76, 0.8)
+      rgba(76,183,76, 0.4), 
+      rgba(76,183,76, 0.4)
     ),
     
     url(https://images.unsplash.com/photo-1458872590620-5056e3311cad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea8be6a18412a1ceb101c00d4959c9f6&auto=format&fit=crop&w=1778&q=80);
@@ -41,8 +41,8 @@ h3 {
 #frenchpress {
     background: 
     linear-gradient(
-      rgba(76,183,76, 0.8), 
-      rgba(76,183,76, 0.8)
+      rgba(76,183,76, .4), 
+      rgba(76,183,76, .4)
     ),
 
     url(https://images.unsplash.com/photo-1534177566139-01a4cd4c7574?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b232a87305c4d08f48f90b1dc5ffb05&auto=format&fit=crop&w=668&q=80);
@@ -54,8 +54,8 @@ h3 {
 #chemex {
     background: 
     linear-gradient(
-      rgba(76,183,76, 0.8), 
-      rgba(76,183,76, 0.8)
+      rgba(76,183,76, 0.4), 
+      rgba(76,183,76, 0.4)
     ),
 
     url(https://images.unsplash.com/photo-1515348876616-f8ec11b01b6a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=935ec8e6a14d7b0cdf2e4d0e92cdcfe3&auto=format&fit=crop&w=668&q=80);
@@ -69,6 +69,8 @@ h3 {
     padding: 35px 20px;
     color: #F1F1F1;
     margin-bottom: 25px;
+    border-radius: 3px;
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
 }
 
 fieldset {
