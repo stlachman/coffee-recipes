@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background: #eee;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background: #fdfdfd;
   margin: 0; 
 }
 
@@ -17,57 +17,28 @@ main {
 }
 
 h1 {
- font-size: 1.5em;
+ font-size: 2.5em;
  color: var(--black);
+ text-align: center;
 }
 
 h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+}
+
+h4 {
     font-weight: normal;
-}
-
-#v60 {
-    background: 
-    linear-gradient(
-      rgba(76,183,76, 0.4), 
-      rgba(76,183,76, 0.4)
-    ),
-    
-    url(https://images.unsplash.com/photo-1458872590620-5056e3311cad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea8be6a18412a1ceb101c00d4959c9f6&auto=format&fit=crop&w=1778&q=80);
-    background-size: cover;
-    background-position: 20% 20%;
-    background-repeat: no-repeat;
-}
-
-#frenchpress {
-    background: 
-    linear-gradient(
-      rgba(76,183,76, .4), 
-      rgba(76,183,76, .4)
-    ),
-
-    url(https://images.unsplash.com/photo-1534177566139-01a4cd4c7574?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b232a87305c4d08f48f90b1dc5ffb05&auto=format&fit=crop&w=668&q=80);
-    background-size: cover;
-    background-position: 20% 20%;
-    background-repeat: no-repeat;
-}
-
-#chemex {
-    background: 
-    linear-gradient(
-      rgba(76,183,76, 0.4), 
-      rgba(76,183,76, 0.4)
-    ),
-
-    url(https://images.unsplash.com/photo-1515348876616-f8ec11b01b6a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=935ec8e6a14d7b0cdf2e4d0e92cdcfe3&auto=format&fit=crop&w=668&q=80);
-    background-size: cover;
-    background-position: 20% 50%;
-    background-repeat: no-repeat;
-    
+    font-size: 1.25em;
+    margin: 0.4em 0;
 }
 
 .tile {
-    padding: 35px 20px;
-    color: #F1F1F1;
+    padding: 15px 25px;
+    background: cadetblue;
+    color: #fdfdfd;
     margin-bottom: 25px;
     border-radius: 3px;
     box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
@@ -77,8 +48,99 @@ fieldset {
     border: 0;
 }
 
+/* Range Styles */
 
-@media (min-width: 640px) {
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 22px 0 25px;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
+  background: #fdfdfd;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
+  border: 0;
+  height: 20px;
+  width: 10px;
+  border-radius: 6px;
+  background: #C0C0C0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #F0F0F0;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
+  background: #fdfdfd;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
+  border: 0;
+  height: 36px;
+  width: 16px;
+  border-radius: 6px;
+  background: #C0C0C0;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
+}
+input[type=range]::-ms-fill-upper {
+  background: #fdfdfd;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.15);
+  border: 0;
+  height: 36px;
+  width: 16px;
+  border-radius: 6px;
+  background: #C0C0C0;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #fdfdfd;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #F0F0F0;
+}
+
+
+@media (min-width: 800px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
