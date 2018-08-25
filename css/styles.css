@@ -4,6 +4,10 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+    text-rendering: optimizeLegibility;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
 }
 
 main {
-    padding: 0 30px;
+    padding: 0;
 }
 
 h1 {
@@ -139,12 +143,24 @@ input[type=range]:focus::-ms-fill-upper {
   background: #F0F0F0;
 }
 
+@media (max-width: 799.97px) {
+  .grid-container {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
 
 @media (min-width: 800px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+    }
+
+    main {
+      padding: 0 30px;
     }
 }
 
