@@ -14,35 +14,20 @@ gramNumber.forEach(gram => {
 
 var vGram = document.getElementById("coffee-grams-v60");
 var vgrams = document.getElementById("v60-grams");
-console.log(vgrams.value);
+var water = document.querySelector(".water-ml");
+
+
 vGram.innerHTML = `${vgrams.value} grams`;
+water.innerHTML = `${vgrams.value * 15} ml`;
 
 function numberChange(e) {
-  console.log(e.value);
-
-  
+  vGram.innerHTML = `${e.value} grams`;
+  ratioChange(e.value);
 }
 
-const v60Ratio = 15;
-const frenchPressRatio = 18;
-const chemexRatio = 17;
-
-function sliderChange(e){
-   var index = document.getElementsByTagName('input');
-   var sliders = document.getElementsByClassName('coffee-gram');
-   var waterValue  = document.getElementsByClassName('water-ml');
-   for (i = 0; i < index.length; i++){
-      if(e == index[i] && e.id == 'v60-ratio'){
-         sliders[i].innerHTML = e.value + ' grams';
-         waterValue[i].innerHTML = Math.ceil(e.value * v60Ratio) + ' ml';
-      }  else if(e == index[i] && e.id == 'frenchpress-ratio') {
-        sliders[i].innerHTML = e.value + ' grams';
-        waterValue[i].innerHTML = Math.ceil(e.value * frenchPressRatio) + ' ml';
-      } else if(e == index[i] && e.id == 'chemex-ratio') {
-        sliders[i].innerHTML = e.value + ' grams';
-        waterValue[i].innerHTML = Math.ceil(e.value * chemexRatio) + ' ml';
-      }
-   }
+function ratioChange(coffeeGrams) {
+  console.log(coffeeGrams * 22);
+  water.innerHTML = `${coffeeGrams * 22} ml`;
 }
 
 
