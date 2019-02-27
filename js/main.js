@@ -5,6 +5,24 @@ gramRange.forEach(range => {
     });
 });
 
+const gramNumber = Array.prototype.slice.call(document.querySelectorAll(".gram-number"))
+gramNumber.forEach(gram => {
+    gram.addEventListener("change", function getRange() {
+        numberChange(this);
+    });
+}); 
+
+var vGram = document.getElementById("coffee-grams-v60");
+var vgrams = document.getElementById("v60-grams");
+console.log(vgrams.value);
+vGram.innerHTML = `${vgrams.value} grams`;
+
+function numberChange(e) {
+  console.log(e.value);
+
+  
+}
+
 const v60Ratio = 15;
 const frenchPressRatio = 18;
 const chemexRatio = 17;
